@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BE8066C1C60AD8600D0519F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8066B1C60AD8600D0519F /* AppKit.framework */; };
+		0BE8066E1C60AD8600D0519F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8066D1C60AD8600D0519F /* Foundation.framework */; };
+		0BE806721C60AD8600D0519F /* MenuCleaner.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 0BE806711C60AD8600D0519F /* MenuCleaner.xcscheme */; };
+		0BE806751C60AD8600D0519F /* MenuCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE806741C60AD8600D0519F /* MenuCleaner.m */; };
+		0BE806781C60AD8600D0519F /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE806771C60AD8600D0519F /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BE806681C60AD8600D0519F /* MenuCleaner.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuCleaner.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE8066B1C60AD8600D0519F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		0BE8066D1C60AD8600D0519F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0BE806711C60AD8600D0519F /* MenuCleaner.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MenuCleaner.xcscheme; path = MenuCleaner.xcodeproj/xcshareddata/xcschemes/MenuCleaner.xcscheme; sourceTree = SOURCE_ROOT; };
+		0BE806731C60AD8600D0519F /* MenuCleaner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuCleaner.h; sourceTree = "<group>"; };
+		0BE806741C60AD8600D0519F /* MenuCleaner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuCleaner.m; sourceTree = "<group>"; };
+		0BE806761C60AD8600D0519F /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		0BE806771C60AD8600D0519F /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		0BE806791C60AD8600D0519F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BE806661C60AD8600D0519F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE8066C1C60AD8600D0519F /* AppKit.framework in Frameworks */,
+				0BE8066E1C60AD8600D0519F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BE8065F1C60AD8500D0519F = {
+			isa = PBXGroup;
+			children = (
+				0BE8066F1C60AD8600D0519F /* MenuCleaner */,
+				0BE8066A1C60AD8600D0519F /* Frameworks */,
+				0BE806691C60AD8600D0519F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BE806691C60AD8600D0519F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BE806681C60AD8600D0519F /* MenuCleaner.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BE8066A1C60AD8600D0519F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8066B1C60AD8600D0519F /* AppKit.framework */,
+				0BE8066D1C60AD8600D0519F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BE8066F1C60AD8600D0519F /* MenuCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				0BE806731C60AD8600D0519F /* MenuCleaner.h */,
+				0BE806741C60AD8600D0519F /* MenuCleaner.m */,
+				0BE806761C60AD8600D0519F /* NSObject_Extension.h */,
+				0BE806771C60AD8600D0519F /* NSObject_Extension.m */,
+				0BE806791C60AD8600D0519F /* Info.plist */,
+				0BE806701C60AD8600D0519F /* Supporting Files */,
+			);
+			path = MenuCleaner;
+			sourceTree = "<group>";
+		};
+		0BE806701C60AD8600D0519F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BE806711C60AD8600D0519F /* MenuCleaner.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BE806671C60AD8600D0519F /* MenuCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE8067C1C60AD8600D0519F /* Build configuration list for PBXNativeTarget "MenuCleaner" */;
+			buildPhases = (
+				0BE806641C60AD8600D0519F /* Sources */,
+				0BE806651C60AD8600D0519F /* Resources */,
+				0BE806661C60AD8600D0519F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenuCleaner;
+			productName = MenuCleaner;
+			productReference = 0BE806681C60AD8600D0519F /* MenuCleaner.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BE806601C60AD8500D0519F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = glory;
+				TargetAttributes = {
+					0BE806671C60AD8600D0519F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 0BE806631C60AD8500D0519F /* Build configuration list for PBXProject "MenuCleaner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BE8065F1C60AD8500D0519F;
+			productRefGroup = 0BE806691C60AD8600D0519F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BE806671C60AD8600D0519F /* MenuCleaner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE806651C60AD8600D0519F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE806721C60AD8600D0519F /* MenuCleaner.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE806641C60AD8600D0519F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE806751C60AD8600D0519F /* MenuCleaner.m in Sources */,
+				0BE806781C60AD8600D0519F /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BE8067A1C60AD8600D0519F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		0BE8067B1C60AD8600D0519F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		0BE8067D1C60AD8600D0519F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = MenuCleaner/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glory.MenuCleaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		0BE8067E1C60AD8600D0519F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = MenuCleaner/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glory.MenuCleaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BE806631C60AD8500D0519F /* Build configuration list for PBXProject "MenuCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8067A1C60AD8600D0519F /* Debug */,
+				0BE8067B1C60AD8600D0519F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE8067C1C60AD8600D0519F /* Build configuration list for PBXNativeTarget "MenuCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8067D1C60AD8600D0519F /* Debug */,
+				0BE8067E1C60AD8600D0519F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BE806601C60AD8500D0519F /* Project object */;
+}
