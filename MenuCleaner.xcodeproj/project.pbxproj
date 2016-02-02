@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5DF3671C60C618002157D3 /* MCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5DF3661C60C618002157D3 /* MCMenuItem.m */; };
 		0BE8066C1C60AD8600D0519F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8066B1C60AD8600D0519F /* AppKit.framework */; };
 		0BE8066E1C60AD8600D0519F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8066D1C60AD8600D0519F /* Foundation.framework */; };
 		0BE806721C60AD8600D0519F /* MenuCleaner.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 0BE806711C60AD8600D0519F /* MenuCleaner.xcscheme */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B5DF3651C60C618002157D3 /* MCMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMenuItem.h; sourceTree = "<group>"; };
+		0B5DF3661C60C618002157D3 /* MCMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMenuItem.m; sourceTree = "<group>"; };
 		0BE806681C60AD8600D0519F /* MenuCleaner.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuCleaner.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE8066B1C60AD8600D0519F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		0BE8066D1C60AD8600D0519F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -68,6 +71,8 @@
 		0BE8066F1C60AD8600D0519F /* MenuCleaner */ = {
 			isa = PBXGroup;
 			children = (
+				0B5DF3651C60C618002157D3 /* MCMenuItem.h */,
+				0B5DF3661C60C618002157D3 /* MCMenuItem.m */,
 				0BE806731C60AD8600D0519F /* MenuCleaner.h */,
 				0BE806741C60AD8600D0519F /* MenuCleaner.m */,
 				0BE806761C60AD8600D0519F /* NSObject_Extension.h */,
@@ -154,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE806751C60AD8600D0519F /* MenuCleaner.m in Sources */,
+				0B5DF3671C60C618002157D3 /* MCMenuItem.m in Sources */,
 				0BE806781C60AD8600D0519F /* NSObject_Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +289,7 @@
 				0BE8067E1C60AD8600D0519F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

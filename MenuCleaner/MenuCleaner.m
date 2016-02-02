@@ -7,6 +7,7 @@
 //
 
 #import "MenuCleaner.h"
+#import "MCMenuItem.h"
 
 @interface MenuCleaner()
 
@@ -35,32 +36,23 @@
 
 - (void)didApplicationFinishLaunchingNotification:(NSNotification*)noti
 {
-    //removeObserver
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
+    NSMenu *mainMenu = [NSApp mainMenu];
+
+    NSMutableArray* allMenuItems = [[mainMenu itemArray] mutableCopy];
     
-    // Create menu items, initialize UI, etc.
-    // Sample Menu Item:
-    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-    if (menuItem) {
-        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-        [actionMenuItem setTarget:self];
-        [[menuItem submenu] addItem:actionMenuItem];
+    // Xcode menu not add to menu cleaner list
+    [allMenuItems removeObjectAtIndex:0];
+    
+    NSMenuItem *pluginsMenuItem = [mainMenu itemWithTitle:@"Plugins"];
+    if (!pluginsMenuItem) {
+        pluginsMenuItem = [[NSMenuItem alloc] init];
+        pluginsMenuItem.title = @"Plugins";
+        pluginsMenuItem.submenu = [[NSMenu alloc] initWithTitle:pluginsMenuItem.title];
+        [mainMenu addItem:pluginsMenuItem];
     }
-}
-
-// Sample Action, for menu item:
-- (void)doMenuAction
-{
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
-    [alert runModal];
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    NSMenuItem *mcMenuItem = [[MCMenuItem alloc] initWithMenuItems:allMenuItems];
+    [pluginsMenuItem.submenu addItem:mcMenuItem];
 }
 
 @end
